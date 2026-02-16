@@ -13,7 +13,7 @@ export class Playstation extends Product {
   getPrice(){
     return this.price;
   }
-  getDiscountPrice(discount:number =1){
+  getDiscountPrice(discount:number = Product.DISCOUNT_PERCENT){
     return this.price*(discount/100);
   }
   

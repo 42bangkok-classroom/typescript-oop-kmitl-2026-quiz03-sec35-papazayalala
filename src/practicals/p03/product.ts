@@ -12,6 +12,7 @@ export class Product {
     getPrice(){
         return this.price;
     }
+    static readonly DISCOUNT_PERCENT = 10;
 
 }
 
