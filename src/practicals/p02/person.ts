@@ -4,7 +4,7 @@ export class Person {
     private age?: number;
 
     static COUNTRY = 'thailand'
-    setAge(age: number){
+    setAge(age?: number){
         this.age = age;
     }
     getFullName(){
