@@ -4,7 +4,7 @@ export class User {
         this.password = password;
 
     }
-    private loginAttempts = 0;
+    private static loginAttempts = 0;
     login(password:string): boolean{
         if(password === this.password){
             return true;
@@ -12,9 +12,9 @@ export class User {
         else{
             return false;
         }
-        this.loginAttempts++;
+        User.loginAttempts++;
     }
     getLoginAttempts(){
-        return this.loginAttempts;
+        return User.loginAttempts;
     }
 }
