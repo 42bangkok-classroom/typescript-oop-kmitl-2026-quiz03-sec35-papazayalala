@@ -1,6 +1,6 @@
 export class Student {
-    firstname: string;
-    lastname: string;
+    firstname?: string;
+    lastname?: string;
     printName(){
         console.log(this.firstname + ' ' + this.lastname)
     }
